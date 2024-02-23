@@ -1,38 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background-color: #f0f0f0; */
+}
+
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.converter {
+  /* background-color: white; */
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  /* width: 50%; */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heading {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: bold;
+  font-size: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  max-width: 400px !important;
+  color: black;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+h4 {
+  color: green;
+}
+
+input {
+  padding-left: 5px;
+  font-size: 20px;
+  height: 36px;
+  width: 350px;
+}
+
+select {
+  width: 350px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.result {
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: green;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  width: 150px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 15px 0px !important;
+  background-color: rgb(151, 221, 172);
+  color: green;
+  cursor: pointer;
 }
